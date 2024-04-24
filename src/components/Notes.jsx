@@ -5,6 +5,7 @@ import {v4 as uuid} from 'uuid'
 import Note from './Note'
 
 const Notes = () => {
+<<<<<<< HEAD
     const [inputText, setInputText] = useState("")
     const [notes, setNotes] = useState([])
     const [editToggle, setEditToggle] = useState(null)
@@ -79,8 +80,21 @@ const Notes = () => {
         /> : <></>
         }
         
+=======
+  return (
+    <div className='note shadow-lg'>
+      <span className=''></span>
+      <div className='note-footer'>
+        <small className=''>22-04-2024</small>
+        <MdDeleteForever className='delete-icon ' size='1.3em' />
+      </div>
+>>>>>>> origin/main
     </div>
   )
 }
 
+<<<<<<< HEAD
 export default Notes
+=======
+export default Notes;
+>>>>>>> origin/main
