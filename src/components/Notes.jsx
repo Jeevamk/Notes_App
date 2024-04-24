@@ -10,7 +10,6 @@ const Notes = () => {
         <small className=''>22-04-2024</small>
         <MdDeleteForever className='delete-icon ' size='1.3em' />
       </div>
-
     </div>
   )
 }
