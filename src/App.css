@@ -1,43 +1,40 @@
-.icon-lg {
-  font-size: 1.5rem; 
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* background-color: rgba(29, 24, 24, 0.96); */
-
+  background-image: url("https://images.freeimages.com/images/large-previews/c0a/fire-flare-1188516.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.notes-list{
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.notes {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
 }
 
-.container{
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
+@media screen and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
 }
 
-.note{
-  padding: 1rem;
-  background-color: rgb(233, 242, 153);
-  /* background: linear-gradient(rgb(32, 205, 236),black); */
-  border-radius: 10px;
-  min-height: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media screen and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
 }
-
-.note-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-

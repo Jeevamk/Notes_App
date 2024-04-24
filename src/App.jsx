@@ -1,14 +1,13 @@
 import './App.css'
 import Navbar from "./components/Navbar";
-import Note_sec from './components/Note_sec';
-
+import Notes from './components/Notes';
 
 export default function App() {
   return (
-    <div>
-      <Navbar />
-      <Note_sec />
-    </div>
+    <div className='main'>
+    <Navbar />
+    <Notes />
+  </div>
   )
 }
 
